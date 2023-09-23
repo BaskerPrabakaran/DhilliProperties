@@ -1,0 +1,187 @@
+ /* Projects css*/
+ @import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+ .project-container{
+    height: 60vh;
+    background-image: url("../images/plot.webp");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.welcome-main-text-project{
+    color:white;
+}
+
+.welcome-main-text2-btn{
+    translate:500px -74px;
+    padding:10px;
+    background-color:pink;
+    color:white;
+    display:flex;
+    text-decoration:none;
+}
+
+a{
+    text-decoration: none;
+}
+
+.main-container{
+    padding-top: 1.25rem;
+    text-align: center;
+}
+
+.main-items{
+    flex-wrap: nowrap;
+    padding: 0.5rem 1.5rem;
+}
+
+.projects{
+    padding: 0;
+    margin: 5px;
+}
+
+.project-item-img{
+    border: 2px solid #ADEBEE;
+    border-radius: 4px;
+    background-color: #E1E1E1;
+    padding: 8px;
+    margin:0 2px;
+    max-width: 100%;
+    height: 100%;
+}
+
+.form-container{
+    background-color: #e2e2e2;
+}
+
+.enquiryform{
+    display: flex;
+    flex-direction: row;
+    padding: 1.5rem;
+    margin: 0 1.5rem;
+    background-color: #FFF;
+    /* box-shadow: 2px 3px 15px #888888 */
+}
+
+.enquery-img{
+    background-image: url("../images/Contactus.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    width: 40%;
+    margin: 0.5rem;
+}
+
+.enq-form{
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    justify-content: center;
+    width: 60%;
+    padding: 1.25rem;
+}
+
+input, .input-message{
+    width: 100%;
+    padding:15px 10px;
+    margin-bottom:10px;
+    border: none;
+    border-bottom: 3px solid #ffdede;
+    -webkit-transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in-out;
+    outline: none;
+}
+
+input:focus, .input-message:focus {
+    border: none;
+    border-bottom: 3px solid #1dce41;
+}
+
+.input-message{
+    resize: none;
+}
+
+.btn-submit{
+    width: 35%;
+    position: relative;
+    left: 30%;
+    padding: 0.75rem 2.5rem;
+    background-color: #019f6c;
+    color: white;
+    border-radius: 10px 10px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    text-decoration: none;
+    border: none;
+}
+
+.btn-submit:hover, .btn-submit:focus {
+    background-color: #057e57;
+}
+
+/* .Name{
+    width: 100%;
+    padding:20px;
+    margin-bottom:20px;
+}
+
+.tel{
+    width: 100%;
+    padding:20px;
+    margin-bottom:20px;
+}
+.email{
+    width: 100%;
+    padding:20px;
+    margin-bottom:20px;
+}
+.Message{
+    width: 100%;
+    padding:50px;    
+    margin-bottom:20px;
+} */
+
+
+/*Media query*/
+@media screen and (max-width: 700px) {
+    .project-container{
+        height: 50vh;
+    }
+    .projects {
+      width: 100%;
+      height: auto;
+      margin: 5px 0;
+    }
+
+    .project-item-img {
+        margin: 0px;
+    }
+
+    .main-container{
+        padding: 0;
+    }
+
+    .enquiryform{
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .enquery-img{
+        width: 100%;
+        height: 200px;
+        margin: 0;
+    }
+
+    .enq-form{
+        width: 100%;
+        padding: 1.25rem 0 0 0;
+    }
+
+    .btn-submit{
+        width: 100%;
+        position: initial;
+        font-size: 1rem;
+    }
+  }
