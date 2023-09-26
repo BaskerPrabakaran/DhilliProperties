@@ -4,6 +4,16 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Dhili Properties & Developers</title>
         <link rel="stylesheet" href="css/css-style.css"/>
+        <script>
+            function myFunction() {
+              var x = document.getElementById("navlink");
+              if (x.className === "nav-links") {
+                x.className += " nav-links-open";
+              } else {
+                x.className = "nav-links";
+              }
+            }
+        </script>
     </head> 
     <body>
         <nav class="top-header">
@@ -14,13 +24,15 @@
                     </a>
                 </div>
                 <div class="menu-icon">
-                    <p>Menu</p>
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                        <i class="fa fa-bars"></i>
+                      </a>
                 </div>
-                <div class="nav-links">
-                    <a href="index.html">Home</a>
-                    <a href="Projects.html">Projects</a>
-                    <a href="#">Services</a>
-                    <a href="contactus.html">Contact Us</a>
+                <div class="nav-links" id="navlink">
+                    <a href="index.html"><span class="active">Home</span></a>
+                    <a href="Projects.html"><span>Projects</span></a>
+                    <a href="#"><span>Services</span></a>
+                    <a href="contactus.html"><span>Contact Us</span></a>
                 </div>
             </div>
         </nav>
@@ -28,30 +40,43 @@
             <div class="welcome-items">
                 <div class="welcome-main-text"><h1>Dhili Properties and Developers</h1></div>
                 <div class="welcome-main-quotes"><h3>We transform your homes from vision to reality</h3></div>
-                <!-- <a class="welcome-btn" href="#">Read more</a> -->
             </div>
         </div>
         <div class="main-container-full">
-            <div class="main-area">
+            <div class="main-area-2">
+                <div class="welcometext"><h1>Welcome to Dhilli Properties & Developers</h1></div>
+                <div class="column-full">
+                    <div class="welcome-img-col">
+                        <img class="img-welcome" src="./images/Studio-Image.png" alt="Whoweare"/>
+                    </div>
+                    <div class="row-text">
+                        <h2>Who We Are</h2>
+                        <p>At Dhilli Properties & Developers, we are a team of experienced real estate developers committed to creating exceptional properties that meet the needs of our clients. With a focus on quality, innovation, and sustainability, we are dedicated to delivering outstanding results that exceed expectations.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main-container-full">
+            <div class="main-area-3">
                 <h2>Accomplished Dreams</h2>
-                <div class="main-items">
-                    <div class="projects">
-                        <img class="main-item-img" src="./images/Main/IMG4.jpg" alt="HomeImg"/>
+                <div class="img-gallery">
+                    <div class="column-img column-img1">
+                        <img class="slide-img" src="./images/Main/IMG4.jpg" alt="HomeImg"/>
                     </div>
-                    <div class="projects">
-                        <img class="main-item-img" src="./images/Main/IMG5.png" alt="HomeImg"/>
+                    <div class="column-img column-img2">
+                        <img class="slide-img" src="./images/Main/IMG5.png" alt="HomeImg"/>
                     </div>
-                    <div class="projects">
-                        <img class="main-item-img" src="./images/Main/IMG6.png" alt="HomeImg"/>
+                    <div class="column-img column-img3">
+                        <img class="slide-img" src="./images/Main/IMG6.png" alt="HomeImg"/>
                     </div>
-                    <div class="projects">
-                        <img class="main-item-img" src="./images/Main/IMG3.jpg" alt="HomeImg"/>
+                    <div class="column-img column-img4">
+                        <img class="slide-img" src="./images/Main/IMG3.jpg" alt="HomeImg"/>
                     </div>
-                    <div class="projects">
-                        <img class="main-item-img" src="./images/Main/IMG1.jpg" alt="HomeImg"/>
+                    <div class="column-img column-img5">
+                        <img class="slide-img" src="./images/Main/IMG2.jpg" alt="HomeImg"/>
                     </div>
-                    <div class="projects">
-                        <img class="main-item-img" src="./images/Main/IMG2.jpg" alt="HomeImg"/>
+                    <div class="column-img column-img6">
+                        <img class="slide-img" src="./images/Main/IMG1.jpg" alt="HomeImg"/>
                     </div>
                 </div>
             </div>

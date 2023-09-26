@@ -6,6 +6,16 @@
         <link rel="stylesheet" href="css/css-style.css"/>
         <link rel="stylesheet" href="css/project.css"/>
         <link rel="stylesheet" href="css/contact.css"/>
+        <script>
+            function myFunction() {
+              var x = document.getElementById("navlink");
+              if (x.className === "nav-links") {
+                x.className += " nav-links-open";
+              } else {
+                x.className = "nav-links";
+              }
+            }
+        </script>
     </head> 
     <body>
         <nav class="top-header">
@@ -16,13 +26,15 @@
                     </a>
                 </div>
                 <div class="menu-icon">
-                    <p>Menu</p>
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                        <i class="fa fa-bars"></i>
+                      </a>
                 </div>
-                <div class="nav-links">
-                    <a href="index.html">Home</a>
-                    <a href="Projects.html">Projects</a>
-                    <a href="#">Services</a>
-                    <a href="contactus.html">Contact Us</a>
+                <div class="nav-links" id="navlink">
+                    <a href="index.html"><span>Home</span></a>
+                    <a href="Projects.html"><span>Projects</span></a>
+                    <a href="#"><span>Services</span></a>
+                    <a href="contactus.html"><span class="active">Contact Us</span></a>
                 </div>
             </div>
         </nav>
@@ -50,12 +62,19 @@
             <div class="container-address">
                 <div class="address-details">
                     <div class="address-item">
+                        <h3>DhilliPropertiesandDevelopers</h3>
+                    </div>
+                    <div class="address-item">
                         <i class="fa fa-address-book fa-2x" aria-hidden="true"></i>
                         <p>No 7, Vanil Arasu St,<br> West Tambaram,<br>Chennai - 600045.</p>
                     </div>
                     <div class="address-item">
                         <i class="fa fa-phone fa-2x" aria-hidden="true"></i>
-                        <p>+91 9941786560</p>
+                        <p>+91 9999588885</p>
+                    </div>
+                    <div class="address-item">
+                        <i class="fa fa-envelope fa-2x" aria-hidden="true"></i>
+                        <p>mail@dhillipropertiesanddeveloper.com</p>
                     </div>
                 </div>
                 <div class="map-container">
