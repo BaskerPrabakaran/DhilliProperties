@@ -32,8 +32,11 @@ a{
 }
 
 .main-items{
+    display: flex;
     flex-wrap: nowrap;
     padding: 0.5rem 1.5rem;
+    flex-direction: row;
+    height: 100%;
 }
 
 .projects{
@@ -120,31 +123,13 @@ input:focus, .input-message:focus {
     background-color: #045e23;
 }
 
-/* .Name{
-    width: 100%;
-    padding:20px;
-    margin-bottom:20px;
-}
-
-.tel{
-    width: 100%;
-    padding:20px;
-    margin-bottom:20px;
-}
-.email{
-    width: 100%;
-    padding:20px;
-    margin-bottom:20px;
-}
-.Message{
-    width: 100%;
-    padding:50px;    
-    margin-bottom:20px;
-} */
-
 
 /*Media query*/
 @media screen and (max-width: 700px) {
+    .main-items{
+        flex-direction: column;
+    }
+
     .project-container{
         height: 50vh;
     }
