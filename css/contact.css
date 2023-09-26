@@ -1,5 +1,3 @@
-@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css");
-
 .welcome-container{
     height: 40vh;
     background-image: url("../images/contruction.jpg");
@@ -50,13 +48,20 @@ input, .input-message{
     flex: 30%;
     display: flex;
     flex-direction: column;
-    background-color: #FFF;
+    background-color: #d04747;
+    color: #FFF;
+    padding: 1.25rem;
+    border-block: 3px solid #646464;
 }
 
 .address-item{
     display: flex;
     flex-direction: row;
     padding: 15px;
+}
+
+.address-item h3{
+    font-weight: bold;
 }
 
 .address-item p{

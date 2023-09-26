@@ -5,6 +5,16 @@
         <title>Dhili Properties & Developers</title>
         <link rel="stylesheet" href="css/css-style.css"/>
         <link rel="stylesheet" href="css/project.css"/>
+        <script>
+            function myFunction() {
+              var x = document.getElementById("navlink");
+              if (x.className === "nav-links") {
+                x.className += " nav-links-open";
+              } else {
+                x.className = "nav-links";
+              }
+            }
+        </script>
     </head> 
     <body>
         <nav class="top-header">
@@ -15,13 +25,15 @@
                     </a>
                 </div>
                 <div class="menu-icon">
-                    <p>Menu</p>
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                        <i class="fa fa-bars"></i>
+                      </a>
                 </div>
-                <div class="nav-links">
-                    <a href="index.html">Home</a>
-                    <a href="Projects.html">Projects</a>
-                    <a href="#">Services</a>
-                    <a href="contactus.html">Contact Us</a>
+                <div class="nav-links" id="navlink">
+                    <a href="index.html"><span>Home</span></a>
+                    <a href="Projects.html"><span class="active">Projects</span></a>
+                    <a href="#"><span>Services</span></a>
+                    <a href="contactus.html"><span>Contact Us</span></a>
                 </div>
             </div>
         </nav>
